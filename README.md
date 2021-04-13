@@ -17,6 +17,11 @@ And install React Material UI by typing `npm install @material-ui/core`.  <br />
 And install Axios by typing `npm install axios`.  <br />
 And type `npm start` to start the program.
 
+## Change url of Database Connection
+
+In src/components/memo/Memo.js on line #14, you need to change the url to your firebase url.
+`"https://[yourURL]/memos.json";`
+
  
 ## Contributing
 
