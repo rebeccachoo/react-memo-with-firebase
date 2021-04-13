@@ -1,6 +1,6 @@
-# React - Todo List
+# React - Todo List: CRUD with Realtime Firebase Database example with Axios
 
-This react app get a todo from a user and send the data to firebase realtime database.<br /><br /><br />
+This react app get a todo from a user and send the data to firebase realtime database.<br /> A user can change the status a todo list to make it done. And the user can create, read, update and delete with firebase database.<br /><br />
 
 | Feature | Description |
 | -----: | :----------- |
