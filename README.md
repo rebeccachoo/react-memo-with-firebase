@@ -1,6 +1,6 @@
-# React - Hangman
+# React - Todo List
 
-This react app get a todo from a user and send the data to firebase realtime database.<br />
+This react app get a todo from a user and send the data to firebase realtime database.<br /><br /><br />
 
 | Feature | Description |
 | -----: | :----------- |
