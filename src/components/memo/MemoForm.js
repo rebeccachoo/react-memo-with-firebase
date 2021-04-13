@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Input, Button } from "@material-ui/core";
 import "./MemoForm.css";
 
 const MemoForm = (props) => {
 	const [memo, setMemo] = useState("");
+
+	useEffect(() => {
+		if (props.updateStatus) {
+			setMemo(props.keyword);
+		}
+	}, [props]);
 
 	return (
 		<div className="InputForm">
@@ -19,7 +25,7 @@ const MemoForm = (props) => {
 				variant="outlined"
 				color="secondary"
 			>
-				Save
+				{props.updateStatus ? "Update" : "Save"}
 			</Button>
 		</div>
 	);

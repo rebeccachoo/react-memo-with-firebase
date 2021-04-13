@@ -37,21 +37,47 @@ const MemoList = (props) => {
 							backgroundColor: memo.done ? "#F3D34A" : "#F0E7D8",
 							cursor: "pointer",
 						}}
-						onClick={(id) => props.cardClicked(memo.id)}
 					>
 						<div style={{ padding: "20px", paddingBottom: "0" }}>
 							<Typography className={classes.title} color="textSecondary">
 								{memo.date}
+								<span
+									style={{
+										float: "right",
+										color: "#587B7F",
+										fontWeight: "bold",
+									}}
+								>
+									{memo.done ? "Done!" : ""}
+								</span>
 							</Typography>
 							<Typography style={{ fontWeight: "bold" }}>
 								{memo.memo}
 							</Typography>
 						</div>
-						<CardActions>
-							<Button size="small" onClick={(id) => props.delete(memo.id)}>
+						<CardActions style={{ paddingTop: "10px" }}>
+							<Button
+								variant="outlined"
+								color="primary"
+								size="small"
+								onClick={(id) => props.cardClicked(memo.id)}
+							>
+								Make it done
+							</Button>
+							<Button
+								variant="outlined"
+								color="primary"
+								size="small"
+								onClick={(id) => props.delete(memo.id)}
+							>
 								Remove
 							</Button>
-							<Button size="small" onClick={(id) => props.update(memo.id)}>
+							<Button
+								variant="outlined"
+								color="primary"
+								size="small"
+								onClick={(id) => props.update(memo.id)}
+							>
 								Update
 							</Button>
 						</CardActions>
