@@ -1,0 +1,13 @@
+.InputForm {
+	width: 100%;
+	/* border: 1px solid red; */
+	padding-top: 40px;
+}
+.InputFormInput {
+	width: 80%;
+}
+.InputButton {
+	width: 20%;
+	position: relative;
+	top: -3px;
+}
