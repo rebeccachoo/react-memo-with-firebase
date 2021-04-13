@@ -19,8 +19,9 @@ And type `npm start` to start the program.
 
 ## Change url of Database Connection
 
-In src/components/memo/Memo.js on line #14, you need to change the url to your firebase url.
-`"https://[yourURL]/memos.json";`
+In src/components/memo/Memo.js on line #14, #69, #93, and #113, you need to change the url to your firebase url.
+`https://[yourURL]/memos.json;`
+`https://[yourURL]/memos/${id}.json`
 
  
 ## Contributing
